@@ -1,0 +1,17 @@
+Time_between_10_PM_AND_11_PM	12380
+Time_between_11_PM_AND_12_AM	25017
+Time_between_12_AM_AND_1_AM	4321
+Time_between_12_PM_AND_1_PM	25822
+Time_between_1_AM_AND_2_AM	6777
+Time_between_1_PM_AND_2_PM	9975
+Time_between_2_AM_AND_3_AM	14044
+Time_between_2_PM_AND_3_PM	7886
+Time_between_3_AM_AND_4_AM	15162
+Time_between_4_AM_AND_5_AM	10500
+Time_between_4_PM_AND_5_PM	18475
+Time_between_5_AM_AND_6_AM	8588
+Time_between_5_PM_AND_6_PM	11467
+Time_between_6_PM_AND_7_PM	9695
+Time_between_7_PM_AND_8_PM	5257
+Time_between_8_PM_AND_9_PM	6868
+Time_between_9_PM_AND_10_PM	19326

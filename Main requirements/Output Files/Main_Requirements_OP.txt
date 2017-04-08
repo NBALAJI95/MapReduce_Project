@@ -1,0 +1,3 @@
+Number of duplicate words: 79448
+Number of unique words:184526
+Ratio of unique words to duplicates:2.322600946531064
