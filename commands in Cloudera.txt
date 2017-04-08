@@ -1,0 +1,15 @@
+[cloudera@quickstart Desktop]$ hadoop fs -copyFromLocal text_ip.txt
+
+[cloudera@quickstart Desktop]$ hadoop jar hadoop-streaming-2.6.0-mr1-cdh5.8.0.jar -file  map.py unique.py -mapper "python map.py" -reducer "python unique.py" -input text_ip.txt -output Main1Unique_final
+
+[cloudera@quickstart Desktop]$ hadoop jar hadoop-streaming-2.6.0-mr1-cdh5.8.0.jar -file  map.py duplicates.py -mapper "python map.py" -reducer "python duplicates.py" -input text_ip.txt -output Main_Duplicate_final
+
+[cloudera@quickstart Desktop]$ hdfs dfs -copyToLocal Main1Unique_final
+
+[cloudera@quickstart Desktop]$ hdfs dfs -copyToLocal Main_Duplicate_final
+
+[cloudera@quickstart Desktop]$ hadoop fs -copyFromLocal text_extra.txt 
+
+[cloudera@quickstart Desktop]$ hadoop jar hadoop-streaming-2.6.0-mr1-cdh5.8.0.jar -file  map_extra.py reduce_extra.py -mapper "python map_extra.py" -reducer "python reduce_extra.py" -input text_extra.txt -output Extra_op
+
+[cloudera@quickstart Desktop]$ hdfs dfs -copyToLocal Extra_op
